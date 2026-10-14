@@ -1,0 +1,137 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# Template pour les idées de pays 
+
+norse_ideas = {
+	start = {
+		land_morale = 0.15	
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	bonus = {
+		infantry_power = 0.15
+	}
+	
+	trigger = {
+		has_country_flag = accepted_norse_ideas_flag
+		NOT = { has_country_flag = refused_norse_ideas }
+	}
+	free = yes
+	
+	norse_ideas_eternal_struggle = {
+		manpower_recovery_speed = 0.15
+		war_exhaustion = -0.03
+	}
+	norse_ideas_norse_seamen = {
+		own_coast_naval_combat_bonus = 1
+		naval_morale = 0.15	
+	}
+	norse_ideas_a_wall_of_shields_for_the_king = {
+		leader_land_shock = 1
+		leader_naval_shock = 1
+	}
+	norse_ideas_norse_artisans = {
+		development_cost = -0.1
+	}
+	norse_ideas_berserkir = {
+		shock_damage = 0.2
+	}
+	norse_ideas_leifs_legacy = {
+		may_explore = yes
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	norse_ideas_ancestral_faith = {
+		tolerance_own = 2
+	}
+}
+
+ENG_ideas = {
+	start = {
+		infantry_power = 0.10 # agincourt
+		global_unrest = -1 # magna carta, parliament
+	}
+
+	bonus = {
+		naval_morale = 0.1
+	}
+	
+	trigger = {
+		tag = ENG
+	}
+	free = yes		#will be added at load.
+	
+	royal_navy = {
+		navy_tradition = 0.25
+		heavy_ship_power = 0.10
+	}
+	eltham_ordinance = {
+		production_efficiency = 0.1
+	}
+	secretaries_of_state = {
+		diplomatic_upkeep = 1
+	}
+	navigation_acts = {
+		trade_efficiency = 0.1
+	}
+	eng_red_coats = {
+		fire_damage = 0.1
+		allowed_marine_fraction = 0.25
+	}
+	sick_and_hurt_board = {
+		sailors_recovery_speed = 0.10
+		sailor_maintenance_modifer = -0.1
+	}
+	british_bill_of_rights = {
+		years_of_nationalism = -5
+		num_of_parliament_issues = 1
+	}
+}
+
+
+### Nation specific idea groups
+
+EYZ_ideas = {
+	start = {
+		possible_policy = 1
+		diplomatic_reputation = 2
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}	
+
+	trigger = {
+		tag = EYZ
+	}
+	free = yes
+	
+	hlr_imperial_throne = {
+		legitimacy = 1.5 #unique (it's the HRE :D)
+		republican_tradition = 0.5
+		devotion = 1.5
+		meritocracy = 1.5	#For completion's sake
+		horde_unity = 1.5
+	}
+	hlr_kaiserliche_armee = {
+		land_morale = 0.15
+	}
+	hlr_imperial_diplomacy = {
+		improve_relation_modifier = 0.33
+	}
+	hlr_centralised_empire = {
+		global_tax_modifier = 0.2
+	}
+	hlr_roman_heritage = {
+		core_creation = -0.2
+	}
+	hlr_adopting_the_goosestep = {
+		discipline = 0.05
+	}
+	hlr_onwards_and_upwards = {
+		governing_capacity_modifier = 0.1
+	}
+}
+

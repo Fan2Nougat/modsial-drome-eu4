@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+unit_type = western
+primary_culture = cul_dieulefit
+religion = catholic
+capital = 465
+
+2025.1.1 = {
+	monarch = {
+		name = "Sebastien"
+		dynasty = "Deleaud"
+		birth_date = 1978.1.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+2025.1.1 = {
+	heir = {
+		name = "Nathanael"
+		monarch_name = "Nathanael I"
+		dynasty = "Beranger"
+		birth_date = 2003.4.4
+		claim = 40 #n'est pas le fils de seb, mais son ex beau fils
+		adm = 2 #Ne sait pas gérer son argent
+		dip = 2 #Austiste
+		mil = 1 #Nul a la bagarre
+	}
+
+}
